@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/Green Academy.png" type="image/png">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>GREEN ACADEMY</title>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <h1>GREEN ACADEMY</h1>
+        </div>
+        <nav>
+            <ul class="side-bar">
+                 <li class="hideOnMobile"><a href="#"> <form action="/search" method="get">
+                    <input type="text" name="query" class="search-box" placeholder="Search... ">
+                    <button type="submit" class="search-button">Search </button>
+                </form></a></li>
+                <li onclick=hideSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="course-catalogue.html">Courses</a></li>
+                <li><a href="contact.html">About</a></li>
+                <li><a href="signup.html">Get Started</a></li>
+            </ul>
+            <ul>
+                <li class="hideOnMobile"><a href="#"> <form action="/search" method="get">
+                    <input type="text" name="query" class="search-box" placeholder="Search... ">
+                    <button type="submit" class="search-button">Search </button>
+                </form></a></li>
+                <li class="hideOnMobile"><a href="main.html">Home</a></li>
+                <li class="hideOnMobile"><a href="course-catalogue.html">Courses</a></li>
+                <li class="hideOnMobile"><a href="contact.html">About</a></li>
+                <li class="hideOnMobile"><a href="signup.html">Get Started</a></li>
+                
+                <li class="menu-button" onclick=showSideBar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a> </li>
+            </ul>
+            <div>
+               
+            </div>
+        </nav>
+    </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-1">
+                <img src="images/green.jpg" alt="trees">
+                <div class="text-container">
+                    <h2>Educating A Green Generation</h2>
+                    <button>START LEARNING NOW</button>
+                </div>
+                
+            </div>
+            <div class="hero-text">
+                <h2>Learn Anything, Anytime</h2>
+                <div class="hero-sections">
+                    <div class="section section-intro">
+                        <p>A sustainable planet, in our opinion, starts with knowledgeable people. Giving you the information, tools, and practical actions you need to safeguard the environment is our goal.</p>
+                        <h3>INTRODUCTION</h3>
+                    </div>
+                    <div class="section section-popular">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus suscipit voluptas quia. Rerum saepe tenetur excepturi doloremque officia? Molestias, cupiditate!</p>
+                        <h3>POPULAR COURSES</h3>
+                    </div>
+                    <div class="section section-testimoni">
+                        <p>"I learned so much about renewable energy solutions. Now, I'm actively reducing my carbon footprint!"</p>
+                        <p>"The Eco-Friendly Home Design course was a game-changer for my career. I recommend it to all designers!"</p>
+                        <h3>TESTIMONIALS</h3>
+                    </div>
+                </div>
+            </div>
+            
+
+        </section>
+        <section class="courses" id="courses">
+            <h2>Our Courses</h2>
+            <div class="course-cards">
+                <div class="course-card">
+                    <img src="images/water.jpg" alt="course-image">
+                    <div>
+                        <div>
+                            <h3>Understanding Wind Energy</h3>
+                            <p>Explore how wind energy is generated and its potential in reducing carbon emissions.</p>
+                            
+                          </div>
+                        <a href="course-card.html" target="_blank"><button>Enroll Now</button></a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="images/water.jpg" alt="course-image">
+                    <div>
+                        <div>
+                            <h3>Understanding Wind Energy</h3>
+                            <p>Explore how wind energy is generated and its potential in reducing carbon emissions.</p>
+                            
+                          </div>
+                        <a href="course-card.html" target="_blank"><button>Enroll Now</button></a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="images/water.jpg" alt="course-image">
+                    <div>
+                        <div>
+                            <h3>Understanding Wind Energy</h3>
+                            <p>Explore how wind energy is generated and its potential in reducing carbon emissions.</p>
+                           
+                          </div>
+                        <a href="course-card.html" target="_blank"><button>Enroll Now</button></a>
+                    </div>
+                </div>
+                
+            </div>
+            <a href="course-catalogue.html"><button class="view_all">View All Courses</button></a>
+        </section>
+    </main>
+    <footer class="footer">
+        <h1>Green Academy</h1>
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#hero-text">About</a></li>
+        </ul>
+    </footer>
+</body>
+<script>
+    function showSideBar() {
+        const sidebar = document.querySelector('.side-bar');
+        sidebar.style.display = 'flex';
+    }
+
+    function hideSideBar() {
+        const sidebar = document.querySelector('.side-bar');
+        sidebar.style.display = 'none';
+    }
+</script>
+</html>
